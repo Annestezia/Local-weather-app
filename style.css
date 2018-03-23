@@ -1,0 +1,44 @@
+body{
+  font-size: 1.2em;
+  min-width: 400px;
+  margin: 0;
+  padding: 0; 
+  background-color: #eee;
+}
+
+.test{
+  width:500px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 1px solid  #777;  
+  background: radial-gradient(ellipse at center, rgba(136,191,232,1) 0%,rgba(112,176,224,1) 100%);
+  background-size: cover;
+  color: #eee;
+  box-shadow: 0 0 2px 1px #bbb;
+}
+
+.inner-test{ 
+  margin: 0;
+  background-color: rgba(0,0,0,.5);
+  padding: 20px;
+}
+
+#location{
+ font-size:1.5em; 
+}
+#temperature{
+  margin: 20px 0;
+  font-size:2em;
+}
+#fc a:hover{
+  text-decoration: none;
+}
+
+.copy{
+  text-align:left;  
+}
+
+#weatherIcon i{
+  font-size: 2em;
+}
+
