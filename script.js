@@ -1,7 +1,8 @@
-$(document).ready(function(darkSkyAPI,freeGeoIP){
+$(document).ready(function(darkSkyAPI,geoIP){
   //get location
-  freeGeoIP="https://freegeoip.net/json/";
-  $.getJSON(freeGeoIP, function(obj){
+  geoIP="https://api.ipdata.co/?api-key=test"
+  // freeGeoIP="https://freegeoip.net/json/";
+  $.getJSON(geoIP, function(obj){
   var lat, lon, location;
     lat= obj.latitude;
     lon=obj.longitude;
@@ -26,7 +27,7 @@ $(document).ready(function(darkSkyAPI,freeGeoIP){
      $('#temperature').html( tempC +' &deg;C') ;
    });
      //all about icons
-     //Darl Sky says  thats all so far
+     //Dark Sky says  thats all so far
         var iconName = obj.currently.icon;
         var  iconClass;
         switch(iconName){
@@ -42,8 +43,7 @@ $(document).ready(function(darkSkyAPI,freeGeoIP){
           case 'partly-cloudy-night':{ iconClass = 'wi wi-night-partly-cloudy'; break;}
           default:{iconClass = 'wi wi-na'; break;}
                    }        
-        $('#weatherIcon i').addClass(iconClass);
-     
-   });    
+        $('#weatherIcon i').addClass(iconClass);     
+    });    
   });
 });
