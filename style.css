@@ -1,10 +1,32 @@
-body{
+.card{
+  width: 500px;
+  background: url(img/splash.png),radial-gradient(ellipse at center, rgba(136,191,232,1) 0%,rgba(112,176,224,1) 100%);
+  -webkit-background-size: auto;
+  background-size: cover;
+  max-width: 100%;
+  min-width: 320px;
+}
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.container-fluid{
+  /*padding: 0;*/
+}
+.card-body{
+  font-size: 1.8rem;
+}
+/*body{
   font-size: 1.2em;
   min-width: 400px;
   margin: 0;
   padding: 0; 
   background-color: #eee;
 }
+
 
 .test{
   width:500px;
@@ -42,3 +64,4 @@ body{
   font-size: 2em;
 }
 
+*/
