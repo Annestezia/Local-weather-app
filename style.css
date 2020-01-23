@@ -13,6 +13,14 @@ input{
   -o-appearance: none;
   appearance: none;
 }
+ .btn:active,
+ .btn:focus,
+ .btn.active {
+   /*background-image: none;*/
+   outline: 0;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+ }
 .container-fluid{
   /*padding: 0;*/
 }
