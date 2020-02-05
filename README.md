@@ -2,7 +2,7 @@
 App to get current  local  weather
 
 ### Features
-* see current local weather based on ip geolocation
+* see current local weather based on browser geolocation
 * see  current temperature in F/C
 
 ### When run locally works on local server only, see [explanation](https://stackoverflow.com/a/8456586)
