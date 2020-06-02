@@ -9,33 +9,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-  <div class="container-fluid d-flex flex-column flex-fill align-items-center justify-content-center">
-    <div class="card text-white align-self-center col-md-6 col-sm-12 p-0">
-      <div class="card-header">
-        <h1 class="card-title">Local Weather App</h1>
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <div class="preload hidden">Please let me find you =)</div>
+    <div class="container-fluid d-flex flex-column flex-fill align-items-center justify-content-center">
+      <div class="app card text-white align-self-center col-md-6 col-sm-12 p-0">
+        <div class="card-header">
+          <h1 class="card-title">Local Weather App</h1>
+        </div>
+        <div class="card-body">
+          <div id="location"></div>
+          <div><i id="weatherIcon"></i></div>
+          <div id="weatherCondition"></div>
+          <div id = "temperature"></div>
+          <div id="fc" class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="celsius" autocomplete="off" checked> &deg;C
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="fahrenheit" autocomplete="off"> &deg;F
+            </label>
+          </div>   
+        </div>
+        <div class="card-footer">
+          <a href="https://darksky.net/poweredby/" title="https://darksky.net/poweredby/">
+            <img src="https://darksky.net/dev/img/attribution/poweredby-oneline-darkbackground.png" alt="" width="100px"/>
+          </a>
+        </div>
       </div>
-      <div class="card-body">
-        <div id="location"></div>
-        <div><i id="weatherIcon"></i></div>
-        <div id="weatherCondition"></div>
-        <div id = "temperature"></div>
-        <div id="fc" class="btn-group" data-toggle="buttons">
-          <label class="btn btn-primary active">
-            <input type="radio" name="options" id="celsius" autocomplete="off" checked> &deg;C
-          </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="options" id="fahrenheit" autocomplete="off"> &deg;F
-          </label>
-        </div>   
-      </div>
-      <div class="card-footer">
-        <a href="https://darksky.net/poweredby/" title="https://darksky.net/poweredby/">
-          <img src="https://darksky.net/dev/img/attribution/poweredby-oneline-darkbackground.png" alt="" width="100px"/>
-        </a>
-      </div>
-    </div>
+    <!-- </div> -->
   </div>
+
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
