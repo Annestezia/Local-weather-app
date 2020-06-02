@@ -1,3 +1,18 @@
+
+  body{
+    position: relative;
+  }
+  .preload{
+   position: absolute; 
+   align-self: center;
+   justify-self: center;
+
+  }
+  .hidden {
+    display: none;
+  }
+
+
 .card{
   width: 500px;
   background: url(img/splash.png),radial-gradient(ellipse at center, rgba(136,191,232,1) 0%,rgba(112,176,224,1) 100%);
@@ -23,4 +38,36 @@ input{
 
 .card-body{
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 460px){
+
+  body{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 1.2rem;
+  }
+  .container-fluid{
+    padding: 0;
+    height: 100%; 
+    background-color: rgb(170, 170, 170);
+    background: url(img/splash.png),radial-gradient(ellipse at center, rgba(136,191,232,1) 0%,rgba(112,176,224,1) 100%);
+  -webkit-background-size: auto;
+  background-size: cover;
+  }
+  .app.card{
+    /* padding: 0; */
+    min-height: 100vh; 
+    min-width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .app .card-footer, .app .card-header{
+    width: 100vw;
+    min-width: 100vw;
+  }
 }
