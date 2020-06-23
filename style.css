@@ -21,6 +21,9 @@
   max-width: 100%;
   min-width: 320px;
 }
+.card-title{
+  margin-bottom: 0;
+}
 input{
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -47,7 +50,7 @@ input{
   }
 
   h1{
-    font-size: 1.2rem;
+    font-size: 2.1rem;
   }
   .container-fluid{
     padding: 0;
