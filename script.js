@@ -2,7 +2,6 @@ function hidePreloader(){
   $(".preload").fadeOut(500);
 }
 
-
 $(document).ready(function () {
   function success(position) {
     const fccEndpoint = 'https://weather-proxy.freecodecamp.rocks';
@@ -13,7 +12,7 @@ $(document).ready(function () {
       hidePreloader();
       showForecast(json);
     });
-  };
+  }
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success);
   }
@@ -33,7 +32,7 @@ $(document).ready(function () {
     $('#weatherCondition').text(main);
     $('#temperature').text(`${tempC} \u2103`);
     switchFC(tempF, tempC);  
-  };
+  }
   function switchFC(tempF, tempC) {
     $('#fahrenheit').on('click', function (e) {
       $(this).parent().addClass('active');
@@ -45,7 +44,7 @@ $(document).ready(function () {
       $('#fahrenheit').parent().removeClass('active');
       $('#temperature').text(`${tempC} \u2103`);
     });
-  };
+  }
 
   
 
