@@ -1,30 +1,28 @@
-  body{
-    position: relative;
-    font-family: 'Century Gothic',sans-serif;
-  }
-  .preload{
-    position: fixed;
-    z-index: 999;
-    overflow: show;
-    text-align: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color:lightskyblue;
-  }
-  @keyframes fadeIn { 
-      from { opacity: 0; } 
-    }  
-  .preload__info{
-    animation: fadeIn 3s;    
-  }
-  .hidden {
-    display: none;
-  }
-  .hidden {
-    display: none;
-  }
+body{
+  position: relative;
+  font-family: 'Century Gothic',sans-serif;
+}
+.preload{
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:lightskyblue;
+  padding-top: 3rem;
+}
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+  }  
+.preload__info{
+  animation: fadeIn 3s;    
+}
+.hidden {
+  display: none;
+}
 
 
 .card{
@@ -38,7 +36,7 @@
 .card-title{
   margin-bottom: 0;
 }
-input{
+#fc input{
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -55,6 +53,9 @@ input{
 
 .card-body{
   font-size: 1.8rem;
+}
+.card-footer a{
+  text-decoration: none;
 }
 
 @media screen and (max-width: 460px){
