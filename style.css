@@ -3,10 +3,24 @@
     font-family: 'Century Gothic',sans-serif;
   }
   .preload{
-   position: absolute; 
-   align-self: center;
-   justify-self: center;
-
+    position: fixed;
+    z-index: 999;
+    overflow: show;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:lightskyblue;
+  }
+  @keyframes fadeIn { 
+      from { opacity: 0; } 
+    }  
+  .preload__info{
+    animation: fadeIn 3s;    
+  }
+  .hidden {
+    display: none;
   }
   .hidden {
     display: none;
