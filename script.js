@@ -19,7 +19,6 @@ $(document).ready(function () {
 });
 
   function showForecast(json) {
-    console.log(json);
     const { name } = json;
     const { main, description, icon } = json.weather[0];
     const { temp } = json.main;
