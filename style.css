@@ -1,13 +1,6 @@
-
-html {
-  height: -webkit-fill-available;
-}
-
 body{
   position: relative;
   font-family: 'Century Gothic',sans-serif;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 .preload{
   position: fixed;
@@ -66,9 +59,13 @@ body{
 }
 
 @media screen and (max-width: 460px){
-
+  html {
+    height: -webkit-fill-available;
+  }
   body{
     font-size: 14px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
 
   h1{
