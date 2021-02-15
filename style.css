@@ -1,6 +1,13 @@
+
+html {
+  height: -webkit-fill-available;
+}
+
 body{
   position: relative;
   font-family: 'Century Gothic',sans-serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 .preload{
   position: fixed;
